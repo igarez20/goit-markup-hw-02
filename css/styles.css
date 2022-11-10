@@ -16,11 +16,12 @@
   --primary-white-color: #ffffff;
   --secondary-white-color: #f5f5f5;
   --team-bg-color: #f5f4fa;
+  --btn-bg-color: #f5f4fa;
   --logo-color: #000000;
   --secondary-bg-color: #2f303a;
 }
 
-/* --------------------Загальні стилі-------------------- */
+/* --------------------ЗАГАЛЬНІ СТИЛІ-------------------- */
 body {
   font-family: 'roboto', sans-serif;
   color: var(--primary-text-color);
@@ -35,10 +36,16 @@ body {
 }
 
 .btn {
+  background-color: var(--btn-bg-color);
+
   font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  text-align: center;
 }
 
-/* --------------------HEADER-------------------- */
+/* --------------------ВЕРХНЯ ЛІНІЯ-------------------- */
 .page-header {
   background-color: var(--primary-white-color);
 
@@ -50,19 +57,72 @@ body {
 }
 
 .logo {
+  color: var(--logo-color);
   font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  letter-spacing: 0.03em;
 }
 
-/*--------------------SITE NAV--------------------  */
+.logo-accent {
+  color: var(--accent-color);
+}
+
+/*--------------------НАВІГАЦІЯ САЙТУ--------------------  */
 .site-nav .link {
+  color: var(--primary-text-color);
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
 }
 
 .site-nav .link:hover,
 .site-nav .link:focus {
   color: var(--accent-color);
+}
+
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+
+/*--------------------ЗВОРОТНІЙ ЗВ'ЯЗОК--------------------  */
+.e-mail,
+.phone {
+  color: var(--secondary-text-color);
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+}
+.e-mail:hover,
+.phone:hover,
+.e-mail:focus .phone:focus {
+  color: var(--accent-color);
+}
+
+/*--------------------ШАПКА--------------------  */
+.hero {
+  background-color: var(--secondary-bg-color);
+}
+
+.hero-title {
+  color: var(--primary-white-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.hero-button {
+  background-color: var(--accent-color);
+  color: var(--primary-white-color);
+}
+
+.hero-button:hover,
+.hero-button:focus {
+  color: var(--primary-text-color);
+  background-color: var(--btn-bg-color);
 }
