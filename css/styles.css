@@ -19,6 +19,7 @@
   --btn-bg-color: #f5f4fa;
   --logo-color: #000000;
   --secondary-bg-color: #2f303a;
+  --contacts-main-color: rgba(255, 255, 255, 0.6);
 }
 
 /* --------------------ЗАГАЛЬНІ СТИЛІ-------------------- */
@@ -42,6 +43,15 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
+  text-align: center;
+}
+
+.title {
+  color: var(--primary-text-color);
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
   text-align: center;
 }
 
@@ -98,7 +108,8 @@ body {
 }
 .e-mail:hover,
 .phone:hover,
-.e-mail:focus .phone:focus {
+.e-mail:focus,
+.phone:focus {
   color: var(--accent-color);
 }
 
@@ -125,4 +136,90 @@ body {
 .hero-button:focus {
   color: var(--primary-text-color);
   background-color: var(--btn-bg-color);
+}
+
+/*--------------------НАШІ ПЕРЕВАГИ--------------------  */
+.benefits {
+  background-color: var(secondary-white-color);
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.benefits-item {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.benefits-text {
+  color: var(--secondary-text-color);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+/*--------------------ЧИМ МИ ЗАЙМАЄМОСЯ?--------------------  */
+.work {
+  background-color: var(secondary-white-color);
+}
+
+/*--------------------НАША КОМАНДА--------------------  */
+.team {
+  background-color: var(--team-bg-color);
+}
+
+.team-member {
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+
+.team-position {
+  color: var(--secondary-text-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+
+/*--------------------ПІДВАЛ--------------------  */
+.footer {
+  background-color: var(--secondary-bg-color);
+}
+.footer > .footer-logo {
+  color: var(--primary-white-color);
+}
+
+/*--------------------КОНТАКТИ--------------------  */
+.contacts {
+  font-style: normal;
+}
+
+.contacts-address {
+  color: var(--primary-white-color);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.contacts-item {
+  color: var(--contacts-main-color);
+}
+
+.contacts-address:hover,
+.contacts-item:hover,
+.contacts-address:focus,
+.contacts-item:focus {
+  color: var(--accent-color);
 }
