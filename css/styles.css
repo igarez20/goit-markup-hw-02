@@ -225,3 +225,13 @@ body {
 }
 
 /*--------------------ПОРТФОЛІО--------------------  */
+.btn.current {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
+
+.examples-btn:hover,
+.examples-btn:focus {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
