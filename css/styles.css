@@ -24,11 +24,15 @@
 
 /* --------------------ЗАГАЛЬНІ СТИЛІ-------------------- */
 body {
-  font-family: 'roboto', sans-serif;
   color: var(--primary-text-color);
+  background-color: var(--primary-white-color);
+
+  font-family: 'roboto', sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.03em;
 }
 
-.section a {
+.section .link {
   text-decoration: none;
 }
 
@@ -57,10 +61,7 @@ body {
 
 /* --------------------ВЕРХНЯ ЛІНІЯ-------------------- */
 .page-header {
-  background-color: var(--primary-white-color);
-
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
@@ -84,7 +85,6 @@ body {
   color: var(--primary-text-color);
 
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.14;
 }
 
@@ -103,7 +103,6 @@ body {
   color: var(--secondary-text-color);
 
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.14;
 }
 .e-mail:hover,
@@ -130,6 +129,8 @@ body {
 .hero-button {
   background-color: var(--accent-color);
   color: var(--primary-white-color);
+
+  letter-spacing: 0.06em;
 }
 
 .hero-button:hover,
@@ -140,7 +141,7 @@ body {
 
 /*--------------------НАШІ ПЕРЕВАГИ--------------------  */
 .benefits {
-  background-color: var(secondary-white-color);
+  background-color: var(--secondary-white-color);
 }
 .visually-hidden {
   position: absolute;
@@ -155,15 +156,12 @@ body {
 
 .benefits-item {
   font-weight: 700;
-  font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
 }
 
 .benefits-text {
   color: var(--secondary-text-color);
-  font-weight: 400;
-  font-size: 14px;
   line-height: 1.71;
 }
 
@@ -187,7 +185,6 @@ body {
 
 .team-position {
   color: var(--secondary-text-color);
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
@@ -208,13 +205,12 @@ body {
 
 .contacts-address {
   color: var(--primary-white-color);
-  font-weight: 400;
-  font-size: 14px;
   line-height: 1.71;
 }
 
 .contacts-item {
   color: var(--contacts-main-color);
+  line-height: 1.71;
 }
 
 .contacts-address:hover,
@@ -230,8 +226,20 @@ body {
   background-color: var(--accent-color);
 }
 
+.examples-btn {
+  font-weight: 500;
+  letter-spacing: 0.03em;
+}
+
 .examples-btn:hover,
 .examples-btn:focus {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
+}
+
+.examples-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
 }
